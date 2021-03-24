@@ -8,7 +8,7 @@ public class Lc
              	 int x1,x2,y1,y2;
 
 	         double dis;
-		 string checkEquality = CheckEqality(line1,line2);
+		 String checkEquality = CheckEqality(line1,line2);
             	 System.out.println("checkEquality");
 
 	         Scanner sc=new Scanner(System.in);
