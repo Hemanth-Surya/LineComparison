@@ -8,8 +8,8 @@ public class Lc
              	 int x1,x2,y1,y2;
 
 	         double dis;
-		 string checkEquality = CheckEqality(line1,line2);
-            	 System.out.println("checkEquality");
+		 string compareTwoLines = CompareTwoLines(line1,line2);
+            	 System.out.println("compareTwoLines");
 
 	         Scanner sc=new Scanner(System.in);
 
@@ -36,11 +36,12 @@ public class Lc
 	}
 
 
-	public static string CheckEqality(double line1,double line2)
+	public static string CompareTwoLines(double line1,double line2)
         {
-            bool checkLines = line1.Equals(line2);
-            System.out.println("checkLines");
-            return checkLines == true ? "Both lines are equal" : "Both lines are not equal";
+            int checkLines = line1.CompareTo(line2);
+            System.println("checkLines");
+            return checkLines == 0 ? "Both lines are equal" :
+                   checkLines == -1 ? "First Line is less Than Second Line" :"First Line is Greater Than Second Line";
         }
         
 
