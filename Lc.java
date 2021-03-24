@@ -8,6 +8,8 @@ public class Lc
              	 int x1,x2,y1,y2;
 
 	         double dis;
+		 string checkEquality = CheckEqality(line1,line2);
+            	 System.out.println("checkEquality");
 
 	         Scanner sc=new Scanner(System.in);
 
@@ -32,6 +34,16 @@ public class Lc
   	         System.out.println("distancebetween"+"("+x1+","+y1+"),"+"("+x2+","+y2+")="+dis);
 
 	}
+
+
+	public static string CheckEqality(double line1,double line2)
+        {
+            bool checkLines = line1.Equals(line2);
+            System.out.println("checkLines");
+            return checkLines == true ? "Both lines are equal" : "Both lines are not equal";
+        }
+        
+
 
 }
 
