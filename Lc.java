@@ -4,10 +4,9 @@ public class Lc
 	public static void main(String arg[])
 
 	{
+		int x1,x2,y1,y2;
 
-             	 int x1,x2,y1,y2;
-
-	         double dis;
+	         double length;
 
 	         Scanner sc=new Scanner(System.in);
 
@@ -27,10 +26,9 @@ public class Lc
 
                  y2=sc.nextInt();
 
-		 dis=Math.sqrt((x2-x1)*(x2-x1) + (y2-y1)*(y2-y1));
+		 length=Math.sqrt((x2-x1)*(x2-x1) + (y2-y1)*(y2-y1));
 
-  	         System.out.println("distancebetween"+"("+x1+","+y1+"),"+"("+x2+","+y2+")="+dis);
-
+  	         System.out.println("lengthbetween"+"("+x1+","+y1+"),"+"("+x2+","+y2+")="+length);
 	}
 
 }
